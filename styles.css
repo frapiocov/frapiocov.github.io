@@ -1,0 +1,60 @@
+body{
+    padding:10px;
+    text-align: center;
+    color: aliceblue;
+    background: #303030 url("back2.png") no-repeat fixed center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.contentContainer{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+}
+
+#name h1{
+    display: inline;
+    font-family: "sans-serif", monospace;
+    color: aliceblue;
+    font-size: 60px;
+}
+
+.contentContainer #info{
+    font-size: 30px;
+    color: aliceblue;
+    text-align: center;
+}
+
+#blink {
+    animation: blink 1s linear infinite;
+}
+@keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+.mybtn{
+    font-family: "sans-serif", monospace;
+    border: none;
+    background-color: transparent;
+    color: aliceblue;
+    font-size: 25px;
+    padding: 8px;
+    margin: 6px;
+    border-radius: 15px;
+}
+
+.mybtn:hover{
+    background-color: aliceblue;
+    color: #303030;
+}
+
+#menu li{
+    display: inline;
+    list-style-type: none;
+}
+
