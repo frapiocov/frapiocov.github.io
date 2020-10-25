@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <title>FrancescoPioCovino</title>
 	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="favicon.ico" type="image/jpg">
 </head>
 <body>
 	<div class="contentContainer">
 		<div id="name"><h1>Covino_Francesco_Pio<h1 id="blink">|</h1></h1></div>
 		<ol id="menu">
 			<li><button class="mybtn" onclick="document.getElementById('info').innerHTML = 'Hi my name is Pio'">bio</button></li>
-			<li><button class="mybtn">works</button></li>
-			<li><button class="mybtn">languages</button></li>
-			<li><button class="mybtn">skills</button></li>
-			<li><button class="mybtn">social</button></li>
+			<li><button class="mybtn" onclick="document.getElementById('info').innerHTML = 'I did some projects'">works</button></li>
+			<li><button class="mybtn" onclick="document.getElementById('info').innerHTML = 'I know many programming languages like java'">languages</button></li>
+			<li><button class="mybtn" onclick="document.getElementById('info').innerHTML = 'Many Skills'">skills</button></li>
+			<li><button class="mybtn" onclick="document.getElementById('info').innerHTML = 'Dont follow me'">social</button></li>
 		</ol>
 			<p id="info"></p>
 	</div>
