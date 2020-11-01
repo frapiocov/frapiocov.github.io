@@ -4,19 +4,48 @@
     <meta charset="UTF-8">
     <title>FrancescoPioCovino</title>
 	<link rel="stylesheet" href="styles.css">
+	<link href="glitchEffect.scss" rel="stylesheet">
+	<script src="scripts.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="icon" href="favicon.ico" type="image/jpg">
 </head>
 <body>
 	<div class="contentContainer">
-		<div id="name"><h1>Covino_Francesco_Pio<h1 id="blink">|</h1></h1></div>
-		<ol id="menu">
-			<li><button class="mybtn" onclick="document.getElementById('info').innerHTML = 'Hi my name is Pio'">bio</button></li>
-			<li><button class="mybtn" onclick="document.getElementById('info').innerHTML = 'I did some projects'">works</button></li>
-			<li><button class="mybtn" onclick="document.getElementById('info').innerHTML = 'I know many programming languages like java'">languages</button></li>
-			<li><button class="mybtn" onclick="document.getElementById('info').innerHTML = 'Many Skills'">skills</button></li>
-			<li><button class="mybtn" onclick="document.getElementById('info').innerHTML = 'Dont follow me'">social</button></li>
-		</ol>
-			<p id="info"></p>
+		<div id="glitchContainer">
+			<div title="francesco_pio_covino" id="glitch">francesco_pio_covino</div>
+		</div>
+
+		<p class="line-1 anim-typewriter" id="frase">Hi! That's my name, i like programming, i'm a computer science student, i like learn new things</p>
+
+		<div id="tabContainer">
+			<div class="tab">
+				<button class="tablinks" onclick="openInfo(event, 'bio')" id="defaultOpen">bio</button>
+				<button class="tablinks" onclick="openInfo(event, 'skills')">skills</button>
+				<button class="tablinks" onclick="openInfo(event, 'works')">works</button>
+			</div>
+
+			<div id="bio" class="tabcontent">
+				<p>I'm 21. I'm italian. I love parmigiana.</p>
+			</div>
+
+			<div id="skills" class="tabcontent">
+				<p>I have some skills.</p>
+			</div>
+
+			<div id="works" class="tabcontent">
+				<p>I did a lot of works...I think</p>
+			</div>
+		</div>
+
+		<div id="links">
+			<ol>
+				<li><a href="">Github</a></li>
+				<li><a href="">Linkedin</a></li>
+				<li><a href="">E-mail</a></li>
+			</ol>
+		</div>
+
+
 	</div>
 </body>
 </html>

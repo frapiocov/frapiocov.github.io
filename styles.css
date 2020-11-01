@@ -1,63 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Pirata+One|Rubik:900');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
 body{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     padding:10px;
     text-align: center;
-    color: aliceblue;
-    background: #303030 url("back2.png") no-repeat fixed center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    font-family: "Rubik", monospace;
+    background: #131313;
+}
+
+h1 {
+    text-transform: Uppercase;
+    margin-bottom: .5em;
+    font-family: "Rubik", sans-serif;
+    font-size: 6rem;
+    color: #E4E5E6;
 }
 
 .contentContainer{
-    width: 100%;
+    position: relative;
+    width: auto;
+    height: auto;
+    border-radius: 14px;
     text-align: center;
-    position: fixed;
 }
 
-#name h1{
+.contentContainer #name h1{
     display: inline;
-    font-family: "sans-serif", monospace;
-    color: aliceblue;
-    font-size: 60px;
+    font-size: 80px;
 }
-
-.contentContainer #info{
-    font-size: 30px;
-    color: aliceblue;
-    text-align: center;
-    margin-top: 400px;
-}
-
-#blink {
-    animation: blink 1s linear infinite;
-}
-@keyframes blink{
-    0%{opacity: 0;}
-    100%{opacity: 1;}
-}
-
 
 .mybtn{
-    font-family: "sans-serif", monospace;
     border: none;
     background-color: transparent;
-    color: aliceblue;
-    font-size: 25px;
+    color: #E4E5E6;
+    font-size: xx-large;
+    font-weight: bold;
     padding: 8px;
     margin: 6px;
-    border-radius: 15px;
 }
 
 .mybtn:hover{
-    background-color: aliceblue;
-    color: #303030;
+    border-left: solid 2px #E4E5E6;
+}
+#menu{
+    margin: 40px;
 }
 
 #menu li{
     display: inline;
     list-style-type: none;
 }
+
+#frase{
+    font-size: large;
+    font-weight: normal;
+    color: #F7971E;
+}
+
+.line-1{
+    position: relative;
+    top: 50%;
+    width: 28em;
+    margin: 0 auto;
+    border-right: 2px solid #F7971E;
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter{
+    animation: typewriter 6s steps(44) 2s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 50em;}
+}
+@keyframes blinkTextCursor{
+    from{border-right-color: #F7971E;}
+    to{border-right-color: transparent;}
+}
+
+
+#glitchContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    background: #131313;
+    color: #E4E5E6;
+    font-size: 96px;
+    font-family: 'Fira Mono', monospace;
+    letter-spacing: -7px;
+}
+
+#glitch{
+    animation: glitch 2s linear infinite;
+}
+
+@keyframes glitch{
+    2%,64%{
+        transform: translate(2px,0) skew(0deg);
+    }
+    4%,60%{
+        transform: translate(-2px,0) skew(0deg);
+    }
+    62%{
+        transform: translate(0,0) skew(5deg);
+    }
+}
+
+#glitch:before,
+div:after{
+    content: attr(title);
+    position: absolute;
+    left: 0;
+}
+
+#glitch:before{
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+    2%,64%{
+        transform: translate(2px,-2px);
+    }
+    4%,60%{
+        transform: translate(-2px,2px);
+    }
+    62%{
+        transform: translate(13px,-1px) skew(-13deg);
+    }
+}
+
+#glitch:after{
+    animation: glitchBottom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBottom{
+    2%,64%{
+        transform: translate(-2px,0);
+    }
+    4%,60%{
+        transform: translate(-2px,0);
+    }
+    62%{
+        transform: translate(-22px,5px) skew(21deg);
+    }
+}
+
+#tabContainer{
+    padding: 20px;
+    box-sizing: content-box;
+    position: absolute;
+    top: 100%;
+    left: 30%;
+}
+
+/* Style the tab */
+.tab {
+    float: left;
+    width: auto;
+    height: 100px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color:  #E4E5E6;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 27px;
+    font-family: "Rubik", monospace;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    color: #F7971E;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    color: #F7971E;
+}
+
+/* Style the tab content */
+.tabcontent {
+    color: #E4E5E6;
+    font-size: 20px;
+    float: left;
+    display: none;
+    padding: 10px 12px;
+    width: auto;
+    border-left: none;
+    height: 100px;
+}
+
+#links{
+    margin: 10px;
+}
+
+#links ol{
+    list-style-type: none;
+}
+
+#links li{
+    display: inline;
+    padding: 10px;
+    text-align: center;
+}
+
+#links a{
+    color: #E4E5E6;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#links a:hover{
+    color: #F7971E;
+}
+
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 970px) {
