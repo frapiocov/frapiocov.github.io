@@ -343,7 +343,7 @@ a:hover {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: #1B1B1B;
 }
 
 #preloader:before {
@@ -351,7 +351,7 @@ a:hover {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #f2f2f2;
+  border: 6px solid #1B1B1B;
   border-top: 6px solid #0078ff;
   border-radius: 50%;
   width: 60px;
