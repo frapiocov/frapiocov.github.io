@@ -3,6 +3,27 @@
     src: url("FIGHTT3_.ttf");
 }
 
-.bg-dark{
-    background-color: #424242;
+body{
+    background-image: url("back1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.8); /* Black w/opacity/see-through */
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: left;
+}
+
+
+.container{
+
 }
