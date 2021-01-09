@@ -67,10 +67,9 @@ var files = (function () {
         }
     };
     Singleton.defaultOptions = {
-        "about.txt": "This website was made using only pure JavaScript with no extra libraries.\n",
-        "contact.txt": "mail@example.com",
-        "social_network_1.txt": "https://www.socialite.com/username/",
-        "social_network_2.txt": "https://example.com/profile/9382/"
+        "about.txt": "http:/frapiocov.github.io",
+        "github.txt": "https://github.com/frapiocov",
+        "instagram.txt": "https://www.instagram.com/pio_covino/"
     };
     return {
         getInstance: function (options) {
