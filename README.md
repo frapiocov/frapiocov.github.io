@@ -1,3 +1,3 @@
 `# frapiocov.github.io`
 
-**This is my personal website**
+**my personal website**
