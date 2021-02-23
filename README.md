@@ -1,3 +1,3 @@
-`# frapiocov.github.io`
+`frapiocov.github.io`
 
 **my personal website**
