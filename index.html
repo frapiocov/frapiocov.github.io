@@ -22,7 +22,7 @@
         <div class="row">
             <div class="col-lg-7 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1">
                <div class="card">
-                    <p>Hi, i'm Francesco Pio Covino!<span style='font-size:45px;'>&#128075;</span> I'm an italian Computer Science student.</p>
+                    <p>Hi, i'm Francesco Pio Covino!<span style='font-size:45px;'>&#128075;</span> I'm a Computer Science student.</p>
                     <p class="w">I'm always looking for new projects for becoming software developer.
                         <i style="font-size: 35px" class="fas fa-keyboard"></i>
                     </p>
@@ -31,12 +31,12 @@
                 </div> 
                 <div class="card d-flex justify-content-center justify-content-lg-start">
                     <ul>
-                        <li class="list-inline-item"><a style="text-decoration: none" class="mybtn" href="#"><i class="fas fa-download"></i>my CV</a></li>
+                        <li class="list-inline-item"><a onclick="openModal('My CV')" style="text-decoration: none" class="mybtn" href="#"><i class="fas fa-download"></i>my CV</a></li>
                         <li class="list-inline-item"><a target="_blank" href="mailto:francescop.covino@gmail.com"><i style="font-size: 35px" class="fa fa-envelope"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i onclick="wait('Linkedin')" style="font-size: 35px" class="fab fa-linkedin-in"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i onclick="openModal('Linkedin')" style="font-size: 35px" class="fab fa-linkedin-in"></i></a></li>
                         <li class="list-inline-item"><a target="_blank" href="http://www.github.com/frapiocov"><i style="font-size: 35px" class="fab fa-github-alt"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i onclick="wait('Telegram')" style="font-size: 35px" class="fab fa-telegram"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i onclick="wait('Instagram')" style="font-size: 35px" class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i onclick="openModal('Telegram')" style="font-size: 35px" class="fab fa-telegram"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i onclick="openModal('Instagram')" style="font-size: 35px" class="fab fa-instagram"></i></a></li>
                     </ul>    
                 </div>
             </div>
@@ -56,6 +56,14 @@
             
         </div>
     </div>
+    <div id="myModal" class="modal">
+
+        <div class="modal-content justify-content-center" style="background-color: #6113ee; color: #fff;">
+          <span class="close" style="color: #fff;">&times;</span>
+          <p style="color: #fff;" id="modalText"><span style='font-size:45px;'>&#128546;</span> Ops... is there no account or CV yet.</p>
+        </div>
+      
+      </div>
 
 </section><!-- End about -->
 <!-- custom js -->
