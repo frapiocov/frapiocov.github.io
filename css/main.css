@@ -431,6 +431,16 @@
     cursor: pointer;
 }
 
+.services__card button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.services__card button:hover{
+    background-color: #fff;
+    color: #f99185;
+}
+
 .services__card:hover{
     transform: scale(1.075);
     transition: 0.2s ease-in;
