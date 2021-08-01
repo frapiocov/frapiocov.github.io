@@ -443,7 +443,7 @@
     }
 
     .services h1 {
-        font-size: 2rem;
+        font-size: 2.8rem;
         margin-top: 12rem;
     }
 }
@@ -454,7 +454,7 @@
     }
 
     .services h1 {
-        font-size: 1.2rem;
+        font-size: 3rem;
     }
 
     .services__card {
@@ -529,6 +529,7 @@
 .social__icon--link {
     color: #fff;
     font-size: 36px;
+    margin: 2px 2px;
 }
 
 .social__icon--link:hover {
