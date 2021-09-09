@@ -1,21 +1,55 @@
-var phrase;
+/*==================== MENU SHOW AND HIDDEN ====================*/
+const navMenu = document.getElementById('nav-menu'),
+    navToggle = document.getElementById('nav-toggle'),
+    navClose = document.getElementById('nav-close')
 
-var modal = document.getElementById("myModal");
-var modalText = document.getElementById("modalText");
-var span = document.getElementsByClassName("close")[0];
-
-function openModal(text) {
-  phrase = 'Ops... ' + text + ' is not ready yet!';  
-  modal.style.display = "block";
-  modalText.innerHTML = "<span style='font-size:45px;'>&#128546;</span>" + phrase + ' Will arrive soon, i promise.';
+/*===== MENU SHOW =====*/
+/* Validate if constant exists */
+if(navToggle){
+    navToggle.addEventListener('click', ()=>{
+        navMenu.classList.add('show-menu')
+    })
 }
 
-span.onclick = function() {
-  modal.style.display = "none";
+/*===== MENU HIDDEN =====*/
+/* Validate if constant exists */
+if(navClose){
+    navClose.addEventListener('click', ()=>{
+        navMenu.classList.remove('show-menu')
+    })
 }
 
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+/*==================== REMOVE MENU MOBILE ====================*/
+const navLink = document.querySelectorAll('.nav__link')
+
+function linkAction(){
+    navMenu.classList.remove('show-menu')
 }
+
+navLink.forEach(n => n.addEventListener('click', linkAction))
+
+/*==================== ACCORDION SKILLS ====================*/
+
+
+/*==================== QUALIFICATION TABS ====================*/
+
+
+/*==================== SERVICES MODAL ====================*/
+
+
+/*==================== PORTFOLIO SWIPER  ====================*/
+
+
+/*==================== TESTIMONIAL ====================*/
+
+
+/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+
+
+/*==================== CHANGE BACKGROUND HEADER ====================*/ 
+
+
+/*==================== SHOW SCROLL UP ====================*/ 
+
+
+/*==================== DARK LIGHT THEME ====================*/ 
