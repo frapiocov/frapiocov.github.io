@@ -1,4 +1,4 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,9 +11,6 @@
     
     <!--==================== UNICONS ====================-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    
-    <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="css/styles.css">
@@ -29,13 +26,13 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">
+                        <a href="#home" class="nav__link active-link">
                             <i class="uil uil-estate nav__icon"></i> Home
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i> About
+                            <i class="uil uil-user nav__icon"></i> About me
                         </a>
                     </li>
                     <li class="nav__item">
@@ -50,7 +47,7 @@
                     </li>
                     <li class="nav__item">
                         <a href="#contact" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i> Contact me
+                            <i class="uil uil-message nav__icon"></i> Contattami
                         </a>
                     </li>
                 </ul>
@@ -58,6 +55,9 @@
             </div>
             
             <div class="nav__btns">
+                <!-- THEME BUTTON -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -72,14 +72,17 @@
             <div class="home__container container grid">
                 <div class="home__content grid">
                     <div class="home__social">
-                        <a href="" class="home__social-icon" target="_blank">
+                        <a href="https://www.linkedin.com/in/francesco-pio-covino-583128217" class="home__social-icon" target="_blank">
                             <i class="uil uil-linkedin"></i>
                         </a>
-                        <a href="" class="home__social-icon" target="_blank">
+                        <a href="http://www.github.com/frapiocov" class="home__social-icon" target="_blank">
                             <i class="uil uil-github"></i>
                         </a>
-                        <a href="" class="home__social-icon" target="_blank">
+                        <a href="https://t.me/pio_covino" class="home__social-icon" target="_blank">
                             <i class="uil uil-telegram"></i>
+                        </a>
+                        <a href="mailto:francescop.covino@gmail.com" class="home__social-icon" target="_blank">
+                            <i class="uil uil-envelope"></i>
                         </a>
                     </div>
                     
@@ -98,18 +101,18 @@
                                 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
                                 
                                 <image class="home__blob-img" 
-                                x='12' y='14' href="img/me-removebg.png"/>
+                                x='22' y='28' href="img/me/thumb-up.png"/>
                             </g>
                         </svg>
                     </div>
                     <div class="home__data">
-                        <h1 class="home__title">Hi, I'm Pio</h1>
-                        <h3 class="home__subtitle">Software Developer / CS Student</h3>
+                        <h1 class="home__title">Hey, sono Pio</h1>
+                        <h3 class="home__subtitle">Software Developer / Studente</h3>
                         <p class="home__description">
-                            I am a budding programmer and a Computer Science student, ready for new experiences and projects. 
+                            Programmatore & Studente Magistrale Informatica. 
                         </p>
                         <a href="#contact" class="button button--flex">
-                            Contact me
+                            Contattami
                             <i class="uil uil-message button__icon">
                             </i>
                         </a>
@@ -119,7 +122,7 @@
                 <div class="home__scroll">
                     <a href="#about" class="home__scroll-button button--flex">
                         <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                        <span class="home__scroll-name">Scroll down</span>
+                        <span class="home__scroll-name">Scorri</span>
                         <i class="uil uil-arrow-down home__scroll-arrow"></i>
                     </a>
                 </div>
@@ -129,33 +132,43 @@
         <!--==================== ABOUT ====================-->
         <section class="about section" id="about">
             <h2 class="section__title">About me</h2>
-            <span class="section__subtitle">Who i am</span>
+            <span class="section__subtitle">Un p&ograve; di cose su di me</span>
             
             <div class="about__container container grid">
-                <img src="img/loadhead-unscreen.gif" alt="" class="about__img">
-                
+                <img src="img/me/about-img.png" alt="" class="about__img">
                 <div class="about__data">
                     <p class="about__description">
-                        I was born in Naples, i like parmigiana di melanzane, my life was really traumatic
+                            Ciao, sono Francesco Pio Covino,
+                            Sono un programmatore in erba da sempre appassionato
+                            al mondo dell'informatica. Attualmente, studente del corso di Laurea Magistrale in
+                            Informatica, curriculum Cloud Computing.
+                            
+                            Attitudine positiva, propenso al lavoro di squadra, molta volontà e motivazione nell'apprendere 
+                            sempre nuove cose, aperto
+                            al confronto e al continuo cambiamento che l’informatica offre.
+                            
+                            Capacità di problem solving, propositivo e creativo.
+                            Interessi vari: dallo sport, con la squadra di calcio locale, 
+                            alla cucina, passando per i gialli, al fumetto fino alla chitarra elettrica.
                     </p>
                     
                     <div class="about__info">
                         <div>
-                            <span class="about__info-title">08+</span>
-                            <span class="about__info-name">Years <br> experience</span>
-                        </div>
-                        <div>
                             <span class="about__info-title">02+</span>
-                            <span class="about__info-name">Completed <br> projects</span>
+                            <span class="about__info-name">Anni <br> d'esperienza</span>
                         </div>
                         <div>
-                            <span class="about__info-title">01+</span>
-                            <span class="about__info-name">Companies <br> worked</span>
+                            <span class="about__info-title">03+</span>
+                            <span class="about__info-name">Progetti <br> completati</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">00+</span>
+                            <span class="about__info-name">Aziende <br> con cui ho lavorato</span>
                         </div>
                     </div>
                     <div class="about__buttons">
                         <a href="COVINOFRANCESCOPIO-CV.pdf" download="" class="button button--flex">
-                            Download CV
+                            Scarica CV
                             <i class="uil uil-download-alt button__icon"></i>
                         </a>
                     </div>
@@ -166,8 +179,10 @@
         <!--==================== SKILLS ====================-->
         <section class="skills section" id="skills">
             <h2 class="section__title">Skills</h2>
-            <span class="section__subtitle">My technical level</span>
+            <span class="section__subtitle">Le mie abilit&agrave;</span>
+            
             <div class="skills__container container grid">
+                <img src="img/me/with-laptop.png" alt="" class="about__img">
                 <div>
                     <!-- FRONTEND -->
                     <div class="skills__content skills__open">
@@ -176,7 +191,7 @@
                             
                             <div>
                                 <h1 class="skills_title">Frontend Developer</h1>
-                                <span class="skills__subtitle">More than 2 years</span>
+                                <span class="skills__subtitle">Da 2 anni</span>
                             </div>
                             
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -197,7 +212,7 @@
                             <div class="skills__data">
                                 <div class="skills__title">
                                     <h3 class="skills__name">JavaScript</h3>
-                                    <span class="skills__number">60%</span>
+                                    <span class="skills__number">80%</span>
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__javascript">
@@ -208,7 +223,7 @@
                             <div class="skills__data">
                                 <div class="skills__title">
                                     <h3 class="skills__name">CSS</h3>
-                                    <span class="skills__number">50%</span>
+                                    <span class="skills__number">60%</span>
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__css">
@@ -218,7 +233,7 @@
                             <div class="skills__data">
                                 <div class="skills__title">
                                     <h3 class="skills__name">React</h3>
-                                    <span class="skills__number">60%</span>
+                                    <span class="skills__number">20%</span>
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__react">
@@ -234,7 +249,7 @@
                             
                             <div>
                                 <h1 class="skills_title">Backend Developer</h1>
-                                <span class="skills__subtitle">More than 2 years</span>
+                                <span class="skills__subtitle">Da 2 anni</span>
                             </div>
                             
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -254,7 +269,7 @@
                             
                             <div class="skills__data">
                                 <div class="skills__title">
-                                    <h3 class="skills__name">Node js</h3>
+                                    <h3 class="skills__name">Node.js</h3>
                                     <span class="skills__number">60%</span>
                                 </div>
                                 <div class="skills__bar">
@@ -265,7 +280,7 @@
                             
                             <div class="skills__data">
                                 <div class="skills__title">
-                                    <h3 class="skills__name">Python</h3>
+                                    <h3 class="skills__name">C, C#</h3>
                                     <span class="skills__number">50%</span>
                                 </div>
                                 <div class="skills__bar">
@@ -275,7 +290,17 @@
                             </div>
                             <div class="skills__data">
                                 <div class="skills__title">
-                                    <h3 class="skills__name">PHP</h3>
+                                    <h3 class="skills__name">SQL</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__python">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">Python</h3>
                                     <span class="skills__number">30%</span>
                                 </div>
                                 <div class="skills__bar">
@@ -292,13 +317,13 @@
                             
                             <div>
                                 <h1 class="skills_title">Cloud Computing</h1>
-                                <span class="skills__subtitle">More than 2 years</span>
+                                <span class="skills__subtitle"></span>
                             </div>
                             
                             <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
                         
-                        <div class="skills__list grid">
+                        <!-- <div class="skills__list grid">
                             <div class="skills__data">
                                 <div class="skills__title">
                                     <h3 class="skills__name">Java</h3>
@@ -341,7 +366,7 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <!-- IDE -->
                     <div class="skills__content skills__close">
@@ -350,7 +375,7 @@
                             
                             <div>
                                 <h1 class="skills_title">IDE & Other</h1>
-                                <span class="skills__subtitle">More than 2 years</span>
+                                <span class="skills__subtitle"></span>
                             </div>
                             
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -359,7 +384,7 @@
                         <div class="skills__list grid">
                             <div class="skills__data">
                                 <div class="skills__title">
-                                    <h3 class="skills__name">Java</h3>
+                                    <h3 class="skills__name">Visual Studio Code</h3>
                                     <span class="skills__number">80%</span>
                                 </div>
                                 <div class="skills__bar">
@@ -370,7 +395,7 @@
                             
                             <div class="skills__data">
                                 <div class="skills__title">
-                                    <h3 class="skills__name">Node.js</h3>
+                                    <h3 class="skills__name">Intellij IDEA</h3>
                                     <span class="skills__number">60%</span>
                                 </div>
                                 <div class="skills__bar">
@@ -381,7 +406,7 @@
                             
                             <div class="skills__data">
                                 <div class="skills__title">
-                                    <h3 class="skills__name">Python</h3>
+                                    <h3 class="skills__name">Eclipse</h3>
                                     <span class="skills__number">50%</span>
                                 </div>
                                 <div class="skills__bar">
@@ -391,7 +416,7 @@
                             </div>
                             <div class="skills__data">
                                 <div class="skills__title">
-                                    <h3 class="skills__name">PHP</h3>
+                                    <h3 class="skills__name">Git, GitHub, GitLab</h3>
                                     <span class="skills__number">30%</span>
                                 </div>
                                 <div class="skills__bar">
@@ -408,18 +433,18 @@
         
         <!--==================== QUALIFICATION ====================-->
         <section class="qualification section">
-            <h2 class="section__title">Qualification</h2>
-            <span class="section__subtitle">My personal journey</span>
-
+            <h2 class="section__title">Qualifiche</h2>
+            <span class="section__subtitle">Il mio percorso</span>      
             <div class="qualification__container container">
+                <img src="img/me/new-fly.png" alt="" class="about__img">
                 <div class="qualification__tabs">
                     <div class="qualification__button button--flex qualification__active" data-target='#education'>
                         <i class="uil uil-graduation-cap qualification__icon"></i>
-                        Education
+                        Educazione
                     </div>
                     <div class="qualification__button button--flex" data-target='#work'>
                         <i class="uil uil-briefcase-alt qualification__icon"></i>
-                        Work
+                        Lavoro
                     </div>
                 </div>
 
@@ -429,8 +454,8 @@
                         <!-- QUALIFICATION 1 -->
                         <div class="qualification__data">
                             <div>
-                                <h3 class="qualification__title">Computer Science Bachelor</h3>
-                                <span class="qualification__subtitle">Salerno's University (UNISA)</span>
+                                <h3 class="qualification__title">Laurea Triennale in Informatica</h3>
+                                <span class="qualification__subtitle">Universit&agrave; degli Studi di Salerno (UNISA)</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
                                     2018-2021
@@ -452,8 +477,10 @@
                             </div>
  
                             <div>
-                                <h3 class="qualification__title">Diploma superiori</h3>
-                                <span class="qualification__subtitle">Salerno's University (UNISA)</span>
+                                <h3 class="qualification__title">Diploma Liceo Scientifico opzione
+                                    Scienze Applicate
+                                </h3>
+                                <span class="qualification__subtitle">IISS Francesco De Sanctis</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
                                     2013-2018
@@ -464,7 +491,7 @@
                     </div>
                     <!-- WORK -->
                     <div class="qualification__content" data-content id="work">
-                        <!-- WORK 1 -->
+                        <!-- 
                         <div class="qualification__data">
 
                             <div>
@@ -481,13 +508,13 @@
                                 <span class="qualification__line"></span>
                             </div>
                         </div>
-                        <!-- WORK 2 -->
+                        
                         <div class="qualification__data">
                             <div></div>
 
                             <div>
                                 <span class="qualification__rounder"></span>
-                                <!-- <span class="qualification__line"></span> -->
+                                <span class="qualification__line"></span>
                             </div>
 
                             <div>
@@ -499,54 +526,157 @@
                                 </div>
                             </div>
 
+                        </div> -->
+                        <div class="qualification__data">
+                            <h3>Ops...ancora nulla a riguardo :(</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         
-        <!--==================== SERVICES ====================-->
-        <section class="services section" id="services">
-            
-            
-        </section>
-        
         <!--==================== PORTFOLIO ====================-->
         <section class="portfolio section" id="portfolio">
-            
-            
-        </section>
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">I progetti recenti</span>
         
-        <!--==================== PROJECT IN MIND ====================-->
-        <section class="project section">
-            
-            
-        </section>
-        
-        <!--==================== TESTIMONIAL ====================-->
-        <section class="testimonial section">
-            
-            
+            <div class="portfolio__container container">
+                
+                <div>
+                    <!-- PROJECT 1 -->
+                    <div class="portfolio__content grid">
+                        <img src="img/me/board.png" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">PolyRec.js</h3>
+                            <p class="portfolio__description">
+                                Libreria JavaScript per il riconoscimento di gesture a 2 dimensioni. Lavoro di tesi.
+                            </p>
+                            <a href="https://gitlab.com/cluelab/tesi/polyrecjs/polyrec-js" class="button button--flex button--small portfolio__button">
+                                Visita Repository <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- PROJECT 2 -->
+                    <div class="portfolio__content grid">
+                        <img src="img/me/browser.png" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Sorrento Marina</h3>
+                            <p class="portfolio__description">
+                                Progettazione, sviluppo e testing WEB app, in un team di 6 persone, per la gestione delle prenotazioni per i lidi di Marina di Sorrento. Piattaforma che presenta funzionalità sia per i dipendenti dei lidi, per facilitarne la gestione, sia per gli utenti. 
+                            </p>
+                            <a href="https://github.com/GPS-IS-The-Boys/SorrentoMarina" class="button button--flex button--small portfolio__button">
+                                Visita Repository <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- PROJECT 3 -->
+                    <div class="portfolio__content grid">
+                        <img src="img/me/target.png" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Salfer Infissi</h3>
+                            <p class="portfolio__description">
+                                Sviluppo di un sito WEB di vetrina per un'impresa nel campo degli infissi sito in Lioni (AV). Scopo primario è la costruzione di una vetrina sul mondo del WEB tramite cui mostrare tutti i prodotti, le informazioni e le offerte.
+                            </p>
+                            <a href="https://www.salferinfissi.it" class="button button--flex button--small portfolio__button">
+                                Visita Repository <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- PROJECT 4 -->
+                    <div class="portfolio__content grid">
+                        <img src="img/me/pencil.png" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Gekap</h3>
+                            <p class="portfolio__description">
+                                Sviluppo di un’ e-commerce per la gestione di una vasta gamma di prodotti di intrattenimento. Team di due persone, sia lato frontend che lato backend con uso di vari linguaggi e framework.
+                            </p>
+                            <a href="https://github.com/frapiocov/gekap" class="button button--flex button--small portfolio__button">
+                                Visita Repository <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         
         <!--==================== CONTACT ME ====================-->
         <section class="contact section" id="contact">
+            <h2 class="section__title">Contattami</h2>
+            <span class="section__subtitle">Ad un click di distanza</span>
             
-            
+            <div class="contact__container container grid">
+                <img src="img/me/business.png" alt="" class="about__img">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Chiamami</h3>
+                        <span class="contact__subtitle">+39 320-777-5383</span>
+                    </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Inviami una mail</h3>
+                        <span class="contact__subtitle">francescop.covino@gmail.com</span>
+                    </div>
+                    </div>
+                    
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Dove sono</h3>
+                        <span class="contact__subtitle">Morra De Sanctis(AV), Italy</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     
     <!--==================== FOOTER ====================-->
     <footer class="footer">
-        
-        
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h3 class="footer__title">Francesco Pio Covino</h3>
+                    <span class="footer__subtitle">Software Developer</span>
+                </div>
+
+                <div class="footer__socials">
+                    <a href="" target="_blank"  class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="" target="_blank"  class="footer__social">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                    <a href="" target="_blank"  class="footer__social">
+                        <i class="uil uil-gitlab"></i>
+                    </a>
+                    <a href="" target="_blank"  class="footer__social">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <a href="" target="_blank"  class="footer__social">
+                        <i class="uil uil-telegram-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copy">&#169; frapiocov. All right reserved</p>
+        </div>
     </footer>
     
     <!--==================== SCROLL TOP ====================-->
-    
-    
-    <!--==================== SWIPER JS ====================-->
-    <script src="js/swiper-bundle.min.js"></script>
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
     
     <!--==================== MAIN JS ====================-->
     <script src="js/index.js"></script>
