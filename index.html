@@ -2,226 +2,683 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>frapiocov</title>
+    
+    <!-- EMOJI FAVICON -->
     <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128187;</text></svg>">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128187;</text></svg>">
     <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128187;</text></svg>">
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/main.css"/>
-    <!-- Line Icons -->
-    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css"> 
-    <!-- font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap">
+    
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>frapiocov</title>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="" id="navbar__logo">
-            <lord-icon
-                src="https://cdn.lordicon.com/ybfcwnqv.json"
-                trigger="loop"
-                delay="20"
-                colors="primary:#f77062,secondary:#ffffff"
-                style="width:50px;height:50px">
-            </lord-icon> 
-                PIO
-            </a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar">  </span>
-                <span class="bar">  </span>
-                <span class="bar">  </span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="#projects" class="navbar__links">Projects</a>
-                </li>
-                <!-- <li class="navbar__item">
-                    <a href="/" class="navbar__links">Esperienze</a>
-                </li> -->
-                <li class="navbar__btn">
-                    <a href="mailto:francescop.covino@gmail.com" target="_blank" class="btn">
-                        Contact me
-                        <lord-icon
-                        src="https://cdn.lordicon.com/rhvddzym.json"
-                        trigger="loop"
-                        delay="20"
-                        colors="primary:#ffffff,secondary:#ffffff"
-                        style="width:40px;height:40px">
-                        </lord-icon>
-                </a>
-            </li>
-        </ul>
-    </div>
-</nav>
-<!-- Hero -->
-<div class="main">
-    <div class="main__container">
-        <div class="main__content">
-            <h1>Francesco Pio</h1>
-            <h2>Covino</h2>
-            <p>Software Developer - CS Student
-                <lord-icon
-                src="https://cdn.lordicon.com/dzllstvg.json"
-                trigger="loop"
-                delay="20"
-                colors="primary:#f77062,secondary:#ffffff"
-                style="width:70px;height:70px">
-            </lord-icon>
-        </p>
-        <button class="main__btn">
-            <a href="COVINOFRANCESCOPIO-CV.pdf" download="">
-                Download CV <i class="lni lni-download"></i> 
-            </a>
-        </button>
-    </div>
-    <div class="main__info--container">
-        <!-- <img src="/img/coding.svg" alt="img" id="main__img"> -->
-        <p> Hi<i class="lni lni-happy"></i>, i'm Francesco Pio, 
-            I'm a Computer Science student at the University of Salerno (UNISA). 
-            I am a budding programmer <i class="lni lni-laptop"></i> ready for new experiences and projects. 
-            Class 99, resident in Morra De Sanctis (AV), I do a lot of things.
-            <br><br>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="" class="nav__logo">PIO</a>
             
-            Java<i class="lni lni-java"></i>, 
-            JavaScript<i class="lni lni-javascript"></i>,
-            HTML<i class="lni lni-html5"></i>, 
-            CSS<i class="lni lni-css3"></i>,  
-            C, 
-            Python<i class="lni lni-python"></i>, 
-            SQL<i class="lni lni-sql"></i>,
-            Unity<i class="lni lni-unity"></i>,
-            Android<i class="lni lni-android"></i>,
-            Node.js<i class="lni lni-node"></i>,
-            Bootstrap <i class="lni lni-bootstrap"></i>,
-            Git<i class="lni lni-git"></i>, GitHub<i class="lni lni-github"></i>, GitLab.
-        </p>
-    </div>
-</div>
-</div>
-<!-- Services -->
-<div class="services" id="projects">
-    <h1>Projects
-    <lord-icon
-        src="https://cdn.lordicon.com/anihkfxp.json"
-        trigger="loop"
-        delay="20"
-        colors="primary:#f77062,secondary:#ffffff"
-        style="width:75px;height:75px">
-    </lord-icon>
-    </h1>
-    <div class="services__container">
-        <div class="services__card">
-            <h2>Polyrec</h2>
-            <p>Thesis Work: Development, testing and migration
-                from Java to JavaScript of a library for
-                2D gestures recognition 
-                for WEB use.
-            </p>
-            <a href="https://gitlab.com/cluelab/tesi/polyrecjs/polyrec-js" target="_blank">  
-                <button>
-                    Visit Repository
-                <lord-icon
-                        src="https://cdn.lordicon.com/ochimkct.json"
-                        trigger="loop"
-                        delay="20"
-                        colors="primary:#ffffff,secondary:#ffffff"
-                        style="width:40px;height:40px">
-                    </lord-icon>
-                </button>  
-            </a>
-        </div>
-        <div class="services__card">
-            <h2>Salfer Infissi</h2>
-            <p>Individual project: development of a showcase WEB site for a small local business.
-                The project is under development, the purpose is
-                show all products, information
-                and offers.</p>
-                <a href="https://www.salferinfissi.it" target="_blank"><button>
-                    Go to the site
-                <lord-icon
-                src="https://cdn.lordicon.com/pndvzexs.json"
-                trigger="loop"
-                delay="20"
-                colors="primary:#ffffff,secondary:#ffffff"
-                style="width:40px;height:40px">
-                </lord-icon>
-                </button></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> About me
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Portfolio 
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> Contattami
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
-            <div class="services__card">
-                <h2>Sorrento Marina</h2>
-                <p>University project: development of a WEB APP,
-                    in all its phases, from design to testing,
-                    in a team of 6 people, for the management of
-                    reservations for the beaches of Marina di Sorrento.
-                </p>
-                <a href="http://github.com/GPS-IS-The-Boys/SorrentoMarina" target="_blank"><button>
-                    Visit Repository
-                    <lord-icon
-                    src="https://cdn.lordicon.com/ochimkct.json"
-                    trigger="loop"
-                    delay="20"
-                    colors="primary:#ffffff,secondary:#ffffff"
-                    style="width:40px;height:40px">
-                </lord-icon>
-                </button></a>
-            </div>
-            <div class="services__card">
-                <h2>Gekap</h2>
-                <p>University project: development of an e-commerce
-                    in a team of 2 people, both frontend and
-                    backend, for the management of
-                    films, documentaries and stand up comedies.</p>
-                    <a href="https://github.com/frapiocov/gekap" target="_blank"><button>
-                       Visit Repository
-                       <lord-icon
-                       src="https://cdn.lordicon.com/ochimkct.json"
-                       trigger="loop"
-                       delay="20"
-                       colors="primary:#ffffff,secondary:#ffffff"
-                       style="width:40px;height:40px">
-                   </lord-icon>
-                    </button></a>
+            
+            <div class="nav__btns">
+                <!-- THEME BUTTON -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
                 </div>
             </div>
+        </nav>
+    </header>
+    
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/francesco-pio-covino-583128217" class="home__social-icon" target="_blank">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+                        <a href="http://www.github.com/frapiocov" class="home__social-icon" target="_blank">
+                            <i class="uil uil-github"></i>
+                        </a>
+                        <a href="https://t.me/pio_covino" class="home__social-icon" target="_blank">
+                            <i class="uil uil-telegram"></i>
+                        </a>
+                        <a href="mailto:francescop.covino@gmail.com" class="home__social-icon" target="_blank">
+                            <i class="uil uil-envelope"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                
+                                <image class="home__blob-img" 
+                                x='22' y='28' href="img/me/thumb-up.png"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">Hey, sono Pio</h1>
+                        <h3 class="home__subtitle">Software Developer / Studente</h3>
+                        <p class="home__description">
+                            Programmatore & Studente Magistrale Informatica. 
+                        </p>
+                        <a href="#contact" class="button button--flex">
+                            Contattami
+                            <i class="uil uil-message button__icon">
+                            </i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scorri</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
             </div>
-            <!-- Footer -->
-            <div class="footer__container">
-                <div class="social__media">
-                    <div class="social__media--wrap">
-                        <div class="footer__logo">
-                            <a href="" id="footer__logo">
-                                <lord-icon
-                                src="https://cdn.lordicon.com/ybfcwnqv.json"
-                                trigger="hover"
-                                colors="primary:#f77062,secondary:#ffffff"
-                                style="width:50px;height:50px">
-                            </lord-icon>
-                            PIO     
+        </section>
+        
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">About me</h2>
+            <span class="section__subtitle">Un p&ograve; di cose su di me</span>
+            
+            <div class="about__container container grid">
+                <img src="img/me/about-img.png" alt="" class="about__img">
+                <div class="about__data">
+                    <p class="about__description">
+                            Ciao, sono Francesco Pio Covino,
+                            Sono un programmatore in erba da sempre appassionato
+                            al mondo dell'informatica. Attualmente, studente del corso di Laurea Magistrale in
+                            Informatica, curriculum Cloud Computing.
+                            
+                            Attitudine positiva, propenso al lavoro di squadra, molta volontà e motivazione nell'apprendere 
+                            sempre nuove cose, aperto
+                            al confronto e al continuo cambiamento che l’informatica offre.
+                            
+                            Capacità di problem solving, propositivo e creativo.
+                            Interessi vari: dallo sport, con la squadra di calcio locale, 
+                            alla cucina, passando per i gialli, al fumetto fino alla chitarra elettrica.
+                    </p>
+                    
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">02+</span>
+                            <span class="about__info-name">Anni <br> d'esperienza</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">03+</span>
+                            <span class="about__info-name">Progetti <br> completati</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">00+</span>
+                            <span class="about__info-name">Aziende <br> con cui ho lavorato</span>
+                        </div>
+                    </div>
+                    <div class="about__buttons">
+                        <a href="COVINOFRANCESCOPIO-CV.pdf" download="" class="button button--flex">
+                            Scarica CV
+                            <i class="uil uil-download-alt button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">Le mie abilit&agrave;</span>
+            
+            <div class="skills__container container grid">
+                <img src="img/me/with-laptop.png" alt="" class="about__img">
+                <div>
+                    <!-- FRONTEND -->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
+                            
+                            <div>
+                                <h1 class="skills_title">Frontend Developer</h1>
+                                <span class="skills__subtitle">Da 2 anni</span>
+                            </div>
+                            
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__html">            
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__javascript">
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__css">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__number">20%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__react">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BACKEND -->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-server-network skills__icon"></i>
+                            
+                            <div>
+                                <h1 class="skills_title">Backend Developer</h1>
+                                <span class="skills__subtitle">Da 2 anni</span>
+                            </div>
+                            
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">Java</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__java">            
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">Node.js</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__node">
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">C, C#</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__python">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">SQL</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__python">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__number">30%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__php">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CLOUD -->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-cloud-computing skills__icon"></i>
+                            
+                            <div>
+                                <h1 class="skills_title">Cloud Computing</h1>
+                                <span class="skills__subtitle"></span>
+                            </div>
+                            
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        
+                        <!-- <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">Java</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__java">            
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">Node.js</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__node">
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__python">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">PHP</h3>
+                                    <span class="skills__number">30%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__php">
+                                    </span>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- IDE -->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-browser skills__icon"></i>
+                            
+                            <div>
+                                <h1 class="skills_title">IDE & Other</h1>
+                                <span class="skills__subtitle"></span>
+                            </div>
+                            
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">Visual Studio Code</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__java">            
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">Intellij IDEA</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__node">
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">Eclipse</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__python">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">Git, GitHub, GitLab</h3>
+                                    <span class="skills__number">30%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__php">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section">
+            <h2 class="section__title">Qualifiche</h2>
+            <span class="section__subtitle">Il mio percorso</span>      
+            <div class="qualification__container container">
+                <img src="img/me/new-fly.png" alt="" class="about__img">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Educazione
+                    </div>
+                    <div class="qualification__button button--flex" data-target='#work'>
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Lavoro
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+                    <!-- EDUCATION -->
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!-- QUALIFICATION 1 -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Laurea Triennale in Informatica</h3>
+                                <span class="qualification__subtitle">Universit&agrave; degli Studi di Salerno (UNISA)</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2018-2021
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        <!-- QUALIFICATION 2 -->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+ 
+                            <div>
+                                <h3 class="qualification__title">Diploma Liceo Scientifico opzione
+                                    Scienze Applicate
+                                </h3>
+                                <span class="qualification__subtitle">IISS Francesco De Sanctis</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2013-2018
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- WORK -->
+                    <div class="qualification__content" data-content id="work">
+                        <!-- 
+                        <div class="qualification__data">
+
+                            <div>
+                                <h3 class="qualification__title">Software Developer</h3>
+                                <span class="qualification__subtitle">Microsoft - Italy</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2021-2024
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Cloud Developer</h3>
+                                <span class="qualification__subtitle">Google - Berlin</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2026-2028
+                                </div>
+                            </div>
+
+                        </div> -->
+                        <div class="qualification__data">
+                            <h3>Ops...ancora nulla a riguardo :(</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">I progetti recenti</span>
+        
+            <div class="portfolio__container container">
+                
+                <div>
+                    <!-- PROJECT 1 -->
+                    <div class="portfolio__content grid">
+                        <img src="img/me/board.png" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">PolyRec.js</h3>
+                            <p class="portfolio__description">
+                                Libreria JavaScript per il riconoscimento di gesture a 2 dimensioni. Lavoro di tesi.
+                            </p>
+                            <a href="https://gitlab.com/cluelab/tesi/polyrecjs/polyrec-js" class="button button--flex button--small portfolio__button">
+                                Visita Repository <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
-                        <a href="mailto:francescop.covino@gmail.com" class="website__rights">francescop.covino@gmail.com</a>
-                        <div class="social__icons">
-                            <a href="http://www.github.com/frapiocov" target="_blank" class="social__icon--link" target="_blank">
-                                <i class="lni lni-github"></i>
+                    </div>
+                    <!-- PROJECT 2 -->
+                    <div class="portfolio__content grid">
+                        <img src="img/me/browser.png" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Sorrento Marina</h3>
+                            <p class="portfolio__description">
+                                Progettazione, sviluppo e testing WEB app, in un team di 6 persone, per la gestione delle prenotazioni per i lidi di Marina di Sorrento. Piattaforma che presenta funzionalità sia per i dipendenti dei lidi, per facilitarne la gestione, sia per gli utenti. 
+                            </p>
+                            <a href="https://github.com/GPS-IS-The-Boys/SorrentoMarina" class="button button--flex button--small portfolio__button">
+                                Visita Repository <i class="uil uil-arrow-right button__icon"></i>
                             </a>
-                            <a href="" class="social__icon--link" target="_blank">
-                                <i class="lni lni-telegram"></i>
+                        </div>
+                    </div>
+                    <!-- PROJECT 3 -->
+                    <div class="portfolio__content grid">
+                        <img src="img/me/target.png" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Salfer Infissi</h3>
+                            <p class="portfolio__description">
+                                Sviluppo di un sito WEB di vetrina per un'impresa nel campo degli infissi sito in Lioni (AV). Scopo primario è la costruzione di una vetrina sul mondo del WEB tramite cui mostrare tutti i prodotti, le informazioni e le offerte.
+                            </p>
+                            <a href="https://www.salferinfissi.it" class="button button--flex button--small portfolio__button">
+                                Visita Repository <i class="uil uil-arrow-right button__icon"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/francesco-pio-covino-583128217" target="_blank" class="social__icon--link" target="_blank">
-                                <i class="lni lni-linkedin"></i>
-                            </a>
-                            <a href="" class="social__icon--link" target="_blank">
-                                <i class="lni lni-twitter"></i>
+                        </div>
+                    </div>
+                    <!-- PROJECT 4 -->
+                    <div class="portfolio__content grid">
+                        <img src="img/me/pencil.png" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Gekap</h3>
+                            <p class="portfolio__description">
+                                Sviluppo di un’ e-commerce per la gestione di una vasta gamma di prodotti di intrattenimento. Team di due persone, sia lato frontend che lato backend con uso di vari linguaggi e framework.
+                            </p>
+                            <a href="https://github.com/frapiocov/gekap" class="button button--flex button--small portfolio__button">
+                                Visita Repository <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </body>
-        <script src="/js/app.js"></script>
-        <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-        </html>
-        <!-- *-* -->
+        </section>
+        
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contattami</h2>
+            <span class="section__subtitle">Ad un click di distanza</span>
+            
+            <div class="contact__container container grid">
+                <img src="img/me/business.png" alt="" class="about__img">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Chiamami</h3>
+                        <span class="contact__subtitle">+39 320-777-5383</span>
+                    </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Inviami una mail</h3>
+                        <span class="contact__subtitle">francescop.covino@gmail.com</span>
+                    </div>
+                    </div>
+                    
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Dove sono</h3>
+                        <span class="contact__subtitle">Morra De Sanctis(AV), Italy</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h3 class="footer__title">Francesco Pio Covino</h3>
+                    <span class="footer__subtitle">Software Developer</span>
+                </div>
+
+                <div class="footer__socials">
+                    <a href="" target="_blank"  class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="" target="_blank"  class="footer__social">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                    <a href="" target="_blank"  class="footer__social">
+                        <i class="uil uil-gitlab"></i>
+                    </a>
+                    <a href="" target="_blank"  class="footer__social">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <a href="" target="_blank"  class="footer__social">
+                        <i class="uil uil-telegram-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copy">&#169; frapiocov. All right reserved</p>
+        </div>
+    </footer>
+    
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+    
+    <!--==================== MAIN JS ====================-->
+    <script src="js/index.js"></script>
+</body>
+</html>
