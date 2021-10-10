@@ -14,7 +14,7 @@
     
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="css/styles.css">
-    
+
     <title>frapiocov</title>
 </head>
 <body>
@@ -138,16 +138,16 @@
                 <img src="img/me/about-img.png" alt="" class="about__img">
                 <div class="about__data">
                     <p class="about__description">
-                            Ciao, sono Francesco Pio Covino, classe 99.
+                            Ciao, sono Francesco Pio Covino,
                             Sono un programmatore in erba da sempre appassionato
                             al mondo dell'informatica. Attualmente, studente del corso di Laurea Magistrale in
                             Informatica, curriculum Cloud Computing.
                             
-                            Attitudine positiva, propenso al lavoro di squadra, motivato ad apprendere 
+                            Attitudine positiva, propenso al lavoro di squadra, molta volontà e motivazione nell'apprendere 
                             sempre nuove cose, aperto
                             al confronto e al continuo cambiamento che l’informatica offre.
+
                     </p>
-                    
                     <div class="about__info">
                         <div>
                             <span class="about__info-title">02+</span>
@@ -168,6 +168,22 @@
                             <i class="uil uil-download-alt button__icon"></i>
                         </a>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GAME SECTION -->
+        <section class="game section" id="game">
+            <h2 class="section__title">Gioca a Bricks</h2>
+            <span class="section__subtitle">Un p&ograve; di relax prima di continuare.
+                <br> Utilizza le frecce destra e sinistra per muovere il pad.
+            </span>
+            
+            <div class="game__container container grid">
+                <div class="game__data">
+                    <canvas id="canvas"></canvas>
+                    <div class="high-score"></div>
+                    <div class="reset">Reset High Score</div>
                 </div>
             </div>
         </section>
@@ -676,5 +692,6 @@
     
     <!--==================== MAIN JS ====================-->
     <script src="js/index.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

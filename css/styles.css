@@ -409,6 +409,48 @@ img {
     display: flex;
     justify-content: center;
 }
+
+/*==================== GAME ====================*/
+.game{
+    box-sizing: border-box;
+}
+.game__container{
+    column-gap: 5rem;
+}
+.game__data{
+    box-sizing: border-box;
+}
+
+#canvas {
+    background: var(--first-color-lighter);
+    border-radius: 5px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid var(--first-color-second);
+  }
+
+  .high-score {
+    position: relative;
+    top: 1.5rem;
+    width: 80%;
+    left: 10%;
+    font-size: 1.3rem;
+    color: var(--text-color-light);
+    text-align: center;
+  }
+  
+  .reset {
+    cursor: pointer;
+    position: relative;
+    top: 95%;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+  }
+
+
 /*==================== SKILLS ====================*/
 .skills__container{
     row-gap: 0;
@@ -809,6 +851,12 @@ img {
     }
     .qualification__container .about__img{
         margin-left: 12rem;
+    }
+}
+
+@media screen and (max-width: 555px){
+    #game{
+        display: none;
     }
 }
 
