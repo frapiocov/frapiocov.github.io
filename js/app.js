@@ -50,7 +50,7 @@ function drawScore(){
 }
 
 /* Create elements and attributes */
-let speed = 3;
+let speed = 6;
 
 let ball = {
     x: canvas.height / 2,
