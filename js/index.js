@@ -119,3 +119,24 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/*============= COOKIE BANNER ============= */
+const cookie_container = document.querySelector(".cookie-container")
+const accept_btn = document.getElementById("accept-cookie")
+const refuse_btn = document.getElementById("refuse-cookie")
+
+accept_btn.addEventListener("click", () => {
+    cookie_container.classList.remove("active");
+    localStorage.setItem("cookieBannerDisplayed", "true");
+})
+
+refuse_btn.addEventListener("click", () => {
+    cookie_container.classList.remove("active");
+    localStorage.setItem("cookieBannerDisplayed", "true");
+})
+
+setTimeout(() => {
+   if(!localStorage.getItem("cookieBannerDisplayed")){
+        cookie_container.classList.add("active");
+    }   
+}, 2000);

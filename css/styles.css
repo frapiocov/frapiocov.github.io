@@ -695,6 +695,37 @@ img {
     color: var(--text-color-light);
 }
 
+/* =============== COOKIE BANNER ================= */
+.cookie-container {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background-color: var(--body-color);
+    color: var(--text-color);
+    padding: 32px;
+    box-shadow: 0 -2px 16px var(--body-color);
+    transition: 400ms;
+    text-align: center;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+.cookie-container.active {
+    bottom:0;
+}
+
+#accept-cookie, #refuse-cookie {
+    cursor: pointer;
+    border: none;
+    font-size: var(--font-medium);
+    margin: 0.8rem 1rem;
+}
+
+.cookie-container a {
+    color: var(--first-color);
+}
+
 /*==================== FOOTER ====================*/
 .footer{
     padding-top: 2rem;
