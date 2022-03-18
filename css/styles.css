@@ -527,7 +527,7 @@ img {
     width: 70%;
 }
 .skills__react{
-    width: 20%;
+    width: 50%;
 }
 .skills__java{
     width: 80%;
@@ -540,6 +540,10 @@ img {
 }
 .skills__php{
     width: 30%;
+}
+
+.skills__azure{
+    width: 10%
 }
 
 .skills__close .skills__list{
