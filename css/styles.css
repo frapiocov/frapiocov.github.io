@@ -523,6 +523,9 @@ img {
 .skills__javascript{
     width: 80%;
 }
+.skills__spring{
+    width: 50%;
+}
 .skills__css{
     width: 70%;
 }
@@ -538,12 +541,20 @@ img {
 .skills__python{
     width: 50%;
 }
-.skills__php{
+.skills__sql{
+    width: 70%;
+}
+.skills__mongo{
     width: 30%;
 }
-
 .skills__azure{
     width: 10%
+}
+.skills__gcloud{
+    width: 80%;
+}
+.skills__flutter{
+    width: 70%
 }
 
 .skills__close .skills__list{
