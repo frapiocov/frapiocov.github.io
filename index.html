@@ -160,12 +160,22 @@
                             <span class="about__info-name">Hours spent<br> on programming</span>
                         </div>
                     </div>
-                    <div class="about__buttons">
-                        <a href="cv_covino_francesco_pio.pdf" download="" class="button button--flex">
-                            Download CV
+                    <div class="cv_buttons">
+                       <div class="about__buttons">
+                        <a href="doc/cv_ita_covino_francesco_pio.pdf" download="" class="button button--flex">
+                            Download CV ITA
                             <i class="uil uil-download-alt button__icon"></i>
+                            <i class="uil uil-italy button__icon"></i>
                         </a>
                     </div>
+                    <div class="about__buttons">
+                        <a href="doc/cv_eng_covino_francesco_pio.pdf" download="" class="button button--flex">
+                            Download CV ENG
+                            <i class="uil uil-download-alt button__icon"></i>
+                        </a>
+                    </div> 
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -431,6 +441,23 @@
                 
             </div>
         </section>
+
+
+        <!-- GAME SECTION -->
+        <section class="game section" id="game">
+            <h2 class="section__title">Play Bricks</h2>
+            <span class="section__subtitle">Some relaxation before continuing
+                <br> Use the left and right arrows to move the pad.
+            </span>
+
+            <div class="game__container container grid">
+                <div class="game__data">
+                    <canvas id="canvas"></canvas>
+                    <div class="high-score"></div>
+                    <div class="reset">Reset High Score</div>
+                </div>
+            </div>
+        </section>
         
         <!--==================== QUALIFICATION ====================-->
         <section class="qualification section">
@@ -590,7 +617,7 @@
                                 Project for the course of Cloud Computing.
                                 Cross-platform application built with Flutter and Microsoft Azure Services. You take a picture, send it in, and the app after identifying your mood of the day, will recommend products (movies, music, series) suitable for your mood.
                             </p>
-                            <a href="https://github.com/FedericoRipoli/EMAD2022_2023-8" target="_blank" class="button button--flex button--small portfolio__button">
+                            <a href="https://github.com/frapiocov/moodday" target="_blank" class="button button--flex button--small portfolio__button">
                                 Open Repository <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
@@ -619,9 +646,15 @@
                             <p class="portfolio__description">
                                 My thesis work for Bachelor's Degree. A JavaScript library for unistroke gesture recognition. 
                             </p>
-                            <a href="https://cluelab.github.io/polyrec.js/" target="_blank" class="button button--flex button--small portfolio__button">
-                                Visit site <i class="uil uil-arrow-right button__icon"></i>
+                            <div class="cv_buttons">
+                               <a href="https://cluelab.github.io/polyrec.js/demo/" target="_blank" class="button button--flex button--small portfolio__button">
+                                Try Polyrec <i class="uil uil-arrow-right button__icon"></i>
                             </a>
+                            <a href="doc/Tesi_Covino.pdf" download="" class="button button--flex button--small portfolio__button">
+                                Download Thesis <i class="uil uil-download-alt button__icon"></i>
+                            </a> 
+                            </div>
+                            
                         </div>
                     </div>
                     <!-- PROJECT 2 -->

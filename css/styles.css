@@ -444,12 +444,31 @@ img {
   .reset {
     cursor: pointer;
     position: relative;
-    top: 95%;
-    left: 10%;
-    width: 80%;
     text-align: center;
+    width: 60%;
+    margin-bottom: 1.5 rem;
+    color: var(--first-color);
+    font-weight: bold;
   }
 
+/*================== CV BUTTONS ========================*/  
+
+.cv_buttons {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}  
+
+@media (min-width: 600px) {
+    .cv_buttons { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+    .cv_buttons { grid-template-columns: repeat(3, 1fr); }
+  }
+  
+  
 
 /*==================== SKILLS ====================*/
 .skills__container{
