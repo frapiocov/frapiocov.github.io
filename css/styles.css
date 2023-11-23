@@ -729,6 +729,22 @@ img {
     color: var(--text-color-light);
 }
 
+/* ==== MOUSE FOLLOW EFFECT ==== */
+
+.circle-mouse {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(to top left, var(--first-color), var(--first-color-lighter));
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px 0 0 -20px;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    z-index: 10;
+}
+
 /* =============== COOKIE BANNER ================= */
 .cookie-container {
     position: fixed;

@@ -90,6 +90,17 @@ function scrollTop(){
 
 window.addEventListener('scroll', scrollTop)
 
+/** MOUSE FOLLOW EFFECT */
+var circlemouse = document.getElementById('circle-mouse');
+
+document.addEventListener('mousemove', (e) => {
+    let x = e.pageX;
+    let y = e.pageY;
+
+    circlemouse.style.top = y + "px";
+    circlemouse.style.left = x + "px";
+})
+
 /*==================== DARK LIGHT THEME ====================*/
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
