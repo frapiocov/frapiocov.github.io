@@ -1,0 +1,31 @@
+<tui-root>
+
+<div class="root">
+  <div class="hello">
+    <h1 class="tui-text_h1">Hello 🖖 i'm Pio</h1>
+    <h2 class="tui-text_h4">Wannabe Full Stack Developer 👾 <br> Actually Master Degree Student 📚</h2>
+  </div>
+
+  <button
+  icon="tuiIconGithub"
+  tuiIconButton
+  type="button"
+  class="tui-space_right-3 tui-space_bottom-3"
+  [disabled]="true"
+></button>
+
+  <div class="projects">
+    <h3>My Projects</h3>
+  <li *ngFor="let repo of repos">
+    <p>{{ repo.name }}</p>
+    <p>{{ repo.description }}</p>
+    <a target="_blank" href="{{ repo.html_url }}">Repository</a>
+    <br>
+    <a target="_blank" *ngIf="repo.homepage" href="{{ repo.homepage }}">sito</a>
+    <br />
+  </li>
+  </div>
+  
+</div>
+
+</tui-root>

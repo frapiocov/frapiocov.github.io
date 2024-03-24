@@ -1,0 +1,12 @@
+
+.root {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+  padding: 2rem;
+}
+
+.hello h1{
+    color: var(--tui-text-01)
+}
