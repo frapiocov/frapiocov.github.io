@@ -1,0 +1,20 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+section {
+    display:flex;
+    border-radius: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    color: var(--tui-base-06);
+}
+
+section p {
+    margin-right: 0.2rem;
+}
+ 
+.label {
+    font: var(--tui-font-text-l);
+}

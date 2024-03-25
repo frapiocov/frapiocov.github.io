@@ -1,0 +1,31 @@
+<div class="card" tuiCardLarge tuiSurface="elevated">
+  <header tuiHeader>
+    <h2 tuiTitle>{{ repo.name }}</h2>
+    <section>
+      <p>{{ repo.description }}</p>
+
+      <a href="{{ repo.html_url }}" target="_blank" rel="noopener noreferrer">
+        <button
+          icon="tuiIconGithub"
+          tuiIconButton
+          type="button"
+          class="tui-space_right-3 tui-space_bottom-3"
+        ></button>
+      </a>
+
+      <a
+        *ngIf="repo.homepage"
+        href="{{ repo.homepage }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button
+          icon="tuiIconLink"
+          tuiIconButton
+          type="button"
+          class="tui-space_right-3 tui-space_bottom-3"
+        ></button>
+      </a>
+    </section>
+  </header>
+</div>
