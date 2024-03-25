@@ -1,68 +1,69 @@
 <tui-root>
-  <div class="root">
-
-    <div class="nav">
-      <button
-      appearance="flat"
-      tuiButton
-      type="button"
-      (click)="show(actions)"
-      class="tui-space_right-3 tui-space_bottom-3"
-    >
-      Curriculum
-    </button>
-    <ng-template #actions let-content="content">
-      <a download shape="rounded" size="s" tuiButton [href]="content">
-        Download
-      </a>
-    </ng-template>
-    <button
-      appearance="flat"
-      tuiButton
-      type="button"
-      class="tui-space_right-3 tui-space_bottom-3"
-    >
-      Projects
-    </button>
-    <button
-      appearance="flat"
-      tuiButton
-      type="button"
-      class="tui-space_right-3 tui-space_bottom-3"
-    >
-      Github
-    </button>
-    <button
-      appearance="flat"
-      tuiButton
-      type="button"
-      class="tui-space_right-3 tui-space_bottom-3"
-    >
-      My Journey
-    </button>
-    </div>
-
-
-
-    <div class="hello">
-      <h1 class="tui-text_h1">Hello 🖖 i'm Pio</h1>
-      <h4 class="tui-text_h5">
-        Wannabe Full Stack Developer 👾 
-        <br>
-        &
-        <br>
-        Actually a Master Degree student 📚
-      </h4>
-    </div>
-
+  <header tuiNavigationHeader>
+    <span tuiNavigationLogo>
+      <tui-icon icon="tuiIconTerminalLarge"></tui-icon>
+      frapiocov
+    </span>
+    <hr />
     
+  </header>
+  <main tuiNavigationMain>
+    <div class="root">
 
-    <div class="projects">
-      <h3>My Projects</h3>
-      <li *ngFor="let repo of repos">
-        <app-repo [repo]="repo"></app-repo>
-      </li>
+      <div class="nav">
+        <button
+          appearance="outline"
+          tuiButton
+          type="button"
+          (click)="show(actions)"
+          class="tui-space_right-2 tui-space_bottom-2"
+        >
+          Curriculum
+        </button>
+        <ng-template #actions let-content="content">
+          <a download shape="rounded" size="s" tuiButton [href]="content">
+            Download
+          </a>
+        </ng-template>
+        <button
+          appearance="flat"
+          tuiButton
+          type="button"
+          class="tui-space_right-3 tui-space_bottom-3"
+        >
+          Projects
+        </button>
+        <button
+          appearance="flat"
+          tuiButton
+          type="button"
+          class="tui-space_right-3 tui-space_bottom-3"
+        >
+          Github
+        </button>
+        <button
+          appearance="flat"
+          tuiButton
+          type="button"
+          class="tui-space_right-3 tui-space_bottom-3"
+        >
+          My Journey
+        </button>
+      </div>
+
+      <div class="hello">
+        <h1 class="tui-text_h1">Hello 🖖 i'm Pio</h1>
+        <img src="../assets/propic.png" alt="" srcset="" height="160">
+        <h4 class="tui-text_h5">
+          Wannabe Full Stack Developer 👾
+          <br />
+          &
+          <br />
+          Actually a Master Degree student 📚
+        </h4>
+      </div>
+
     </div>
-
-  </div>
+    <app-projects></app-projects>
+  </main>
 </tui-root>

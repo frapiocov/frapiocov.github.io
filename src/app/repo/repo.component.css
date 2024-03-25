@@ -1,5 +1,6 @@
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 1rem;
 }
 
 section {
@@ -17,4 +18,9 @@ section p {
  
 .label {
     font: var(--tui-font-text-l);
+}
+
+.topics li{
+    display: inline-flex;
+    margin-right: 0.5rem;
 }

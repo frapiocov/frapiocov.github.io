@@ -1,4 +1,7 @@
-
+main {
+  background-color: var(--tui-base-01);
+  text-align: center;
+}
 
 .root {
   display: inline-block;
@@ -9,20 +12,14 @@
 }
 
 .nav {
-  display: flex;
   margin: 0.3rem;
   justify-content: center;
 }
 
 .hello {
- background-color: var(--tui-base-02);
  padding: 1rem;
 }
 
 .hello h1{
     color: var(--tui-text-01)
-}
-
-li{
-  list-style-type: none;
 }

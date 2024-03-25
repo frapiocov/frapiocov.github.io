@@ -12,12 +12,19 @@ import { TuiCardModule } from "@taiga-ui/experimental";
 import { RepoComponent } from './repo/repo.component';
 import { TuiThemeNightModule, TuiModeModule } from '@taiga-ui/core';
 import { TuiPdfViewerModule } from "@taiga-ui/kit";
-
+import { ProjectsComponent } from './projects/projects.component';
+import { JourneyComponent } from './journey/journey.component';
+import { TuiNavigationModule } from "@taiga-ui/experimental";
+import { TuiIconModule } from "@taiga-ui/experimental";
+import { TuiAvatarModule } from "@taiga-ui/kit";
+import { TuiBadgeModule } from "@taiga-ui/kit";
 
 @NgModule({
   declarations: [
     AppComponent,
-    RepoComponent
+    RepoComponent,
+    ProjectsComponent,
+    JourneyComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +40,11 @@ import { TuiPdfViewerModule } from "@taiga-ui/kit";
     TuiCardModule,
     TuiThemeNightModule,
     TuiModeModule,
-    TuiPdfViewerModule
+    TuiPdfViewerModule,
+    TuiNavigationModule,
+    TuiIconModule,
+    TuiAvatarModule,
+    TuiBadgeModule
   ],
   providers: [{ provide: TUI_SANITIZER, useClass: NgDompurifySanitizer }],
   bootstrap: [AppComponent]
