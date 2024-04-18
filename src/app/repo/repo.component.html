@@ -1,9 +1,20 @@
-<div class="card" tuiCardLarge tuiSurface="elevated">
-  <header tuiHeader>
-    <h2 tuiTitle>{{ repo.name }}</h2>
-    <section>
-      <p>{{ repo.description }}</p>
-
+<tui-island size="l" textAlign="center" class="island">
+  <div class="tui-island__content">
+    <div class="island_elements">
+      <h3 class="tui-island__title">{{ repo.name }}</h3>
+      <p class="tui-island__paragraph">
+        {{ repo.description }}
+      </p>
+      <div *ngIf="repo.topics" class="topics">
+        <li *ngFor="let topic of repo.topics">
+          <tui-badge
+            size="l"
+            status="primary"
+            [hoverable]="true"
+            value="{{ topic }}"
+          ></tui-badge>
+        </li>
+      </div>
       <a href="{{ repo.html_url }}" target="_blank" rel="noopener noreferrer">
         <button
           icon="tuiIconGithub"
@@ -13,7 +24,6 @@
           class="tui-space_right-3 tui-space_bottom-3"
         ></button>
       </a>
-
       <a
         *ngIf="repo.homepage"
         href="{{ repo.homepage }}"
@@ -28,18 +38,7 @@
           class="tui-space_right-3 tui-space_bottom-3"
         ></button>
       </a>
-    </section>
-  </header>
-  <footer>
-    <div *ngIf="repo.topics" class="topics">
-      <li *ngFor="let topic of repo.topics">
-          <tui-badge
-            size="l"
-            status="primary"
-            [hoverable]="true"
-            value="{{ topic }}"
-          ></tui-badge>
-      </li>
+
     </div>
-  </footer>
-</div>
+  </div>
+</tui-island>

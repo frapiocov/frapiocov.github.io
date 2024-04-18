@@ -3,11 +3,9 @@ li{
   }
 
 .projects {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
+ padding-bottom: 2rem;
 }
 
-.projects h3{
-  text-align: center;
+.item {
+  margin-bottom: auto;
 }

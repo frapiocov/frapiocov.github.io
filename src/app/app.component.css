@@ -3,23 +3,50 @@ main {
   text-align: center;
 }
 
-.root {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  font-family: Roboto, sans-serif;
-  padding: 2rem;
+tui-root{
+    background-color: var(--tui-base-01);
 }
 
-.nav {
-  margin: 0.3rem;
+.root {
+  align-items: center;
   justify-content: center;
+  display: inline;
 }
 
 .hello {
- padding: 1rem;
+  padding: 1.8rem;
+  margin-top: 1.8rem;
 }
 
-.hello h1{
-    color: var(--tui-text-01)
+.ratingdiv {
+  padding: 0.4rem;
+}
+
+.ratingdiv p {
+  font-size: 1rem;
+  color: var(--tui-text-01);
+}
+
+.rating,
+.buttonrat {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.rating {
+  &[data-value="1"] {
+    color: var(--tui-negative);
+  }
+
+  &[data-value="2"] {
+    color: var(--tui-warning-fill);
+  }
+
+  &[data-value="3"] {
+    color: var(--tui-positive);
+  }
+
+  &:hover {
+    color: var(--tui-info-fill);
+  }
 }

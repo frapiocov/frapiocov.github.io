@@ -1,26 +1,25 @@
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin: 1rem;
+@import url(https://fonts.googleapis.com/css2?family=Noto+Colr+Emoji+Glyf);
+
+.island {
+  margin: 0.8rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-section {
-    display:flex;
-    border-radius: 0.75rem;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.1rem;
-    color: var(--tui-base-06);
+.island_elements {
+    padding-top: 0.3rem;
 }
 
-section p {
-    margin-right: 0.2rem;
+.topics {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
 }
- 
+
 .label {
-    font: var(--tui-font-text-l);
+  font: var(--tui-font-text-l);
 }
 
-.topics li{
-    display: inline-flex;
-    margin-right: 0.5rem;
+.topics li {
+  display: inline-flex;
+  margin-right: 0.5rem;
 }

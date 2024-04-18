@@ -11,13 +11,20 @@ import { TuiLinkModule } from "@taiga-ui/core";
 import { TuiCardModule } from "@taiga-ui/experimental";
 import { RepoComponent } from './repo/repo.component';
 import { TuiThemeNightModule, TuiModeModule } from '@taiga-ui/core';
-import { TuiPdfViewerModule } from "@taiga-ui/kit";
+import { TuiPaginationModule, TuiPdfViewerModule } from "@taiga-ui/kit";
 import { ProjectsComponent } from './projects/projects.component';
 import { JourneyComponent } from './journey/journey.component';
 import { TuiNavigationModule } from "@taiga-ui/experimental";
 import { TuiIconModule } from "@taiga-ui/experimental";
 import { TuiAvatarModule } from "@taiga-ui/kit";
 import { TuiBadgeModule } from "@taiga-ui/kit";
+import { TuiRatingModule } from "@taiga-ui/experimental";
+import { TuiLabelModule } from "@taiga-ui/core";
+import { TuiHeaderModule } from "@taiga-ui/experimental";
+import { TuiTooltipModule } from "@taiga-ui/core";
+import { TuiBadgeNotificationModule } from "@taiga-ui/experimental";
+import { TuiIslandModule } from "@taiga-ui/kit";
+import { TuiCarouselModule } from "@taiga-ui/kit";
 
 @NgModule({
   declarations: [
@@ -31,6 +38,10 @@ import { TuiBadgeModule } from "@taiga-ui/kit";
     HttpClientModule,
     CommonModule,
     BrowserAnimationsModule,
+    TuiHeaderModule,
+    TuiCarouselModule,
+    TuiTooltipModule,
+    TuiBadgeNotificationModule,
     TuiRootModule,
     TuiDialogModule,
     TuiAlertModule,
@@ -44,7 +55,11 @@ import { TuiBadgeModule } from "@taiga-ui/kit";
     TuiNavigationModule,
     TuiIconModule,
     TuiAvatarModule,
-    TuiBadgeModule
+    TuiBadgeModule,
+    TuiRatingModule,
+    TuiLabelModule,
+    TuiIslandModule,
+    TuiPaginationModule
   ],
   providers: [{ provide: TUI_SANITIZER, useClass: NgDompurifySanitizer }],
   bootstrap: [AppComponent]
