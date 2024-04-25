@@ -16,7 +16,7 @@ export default function Home() {
 			<CssBaseline />
 			<Container maxWidth='lg' sx={{ marginTop: "6.5rem" }}>
 				<div className='main'>
-					<Typography variant='h1'>hi, i&apos;m pio 👋</Typography>
+					<Typography variant='h1' sx={{fontWeight: 550}}>hi, i&apos;m pio 👋</Typography>
 					<Typography variant='h4'>
 						your friendly neighbourhood dev 👨‍💻
 					</Typography>
@@ -30,9 +30,9 @@ export default function Home() {
 							size='large'
 							color='primary'
 							endIcon={<DownloadIcon />}
-							href="cv_ita_covino_francesco_pio.pdf"
-							download=""
-							>
+							href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+							target='_blank'>
+							
 							CV
 						</Button>
 
