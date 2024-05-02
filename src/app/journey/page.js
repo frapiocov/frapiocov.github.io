@@ -13,7 +13,7 @@ export default function Journey() {
 			<Container
 				maxWidth='lg'
 				sx={{ padding: "0.8rem", marginTop: "1.4rem" }}>
-				<Button variant='text' color="error" startIcon={<TerminalIcon />} href="/">
+				<Button variant='text' color="primary" startIcon={<TerminalIcon />} href="/">
 					frapiocov
 				</Button>
 				<Typography variant='h3'>My Journey⏳</Typography>

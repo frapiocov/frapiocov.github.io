@@ -58,7 +58,7 @@ export default function Projects() {
 			<Container
 				maxWidth='lg'
 				sx={{ padding: "0.8rem", marginTop: "1.4rem" }}>
-				<Button variant='text' color="warning" startIcon={<TerminalIcon />} href="/">
+				<Button variant='text' color="primary" startIcon={<TerminalIcon />} href="/">
 					frapiocov
 				</Button>
 				<Typography variant='h3'>Projects📂</Typography>

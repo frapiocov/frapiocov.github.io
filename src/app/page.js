@@ -12,7 +12,6 @@ import Typography from "@mui/material/Typography";
 import FolderIcon from "@mui/icons-material/Folder";
 import TimelineIcon from "@mui/icons-material/Timeline";
 import Divider from "@mui/material/Divider";
-import Chip from "@mui/material/Chip";
 
 export default function Home() {
 	return (
@@ -21,13 +20,13 @@ export default function Home() {
 			<Container maxWidth='lg' sx={{ marginTop: "3.8rem" }}>
 				<div className='main'>
 					<Typography variant='h2' sx={{ fontWeight: 540 }}>
-						hi, i&apos;m pio 👋
+						hi, i&apos;m <span style={{color:"#00897b"}}>pio </span>👋
 					</Typography>
 
 					<Typography variant='h5'>
-						your friendly neighbourhood dev 👨‍💻
+						your friendly neighbourhood <span style={{color:"#00897b"}}>dev</span> 👨‍💻
 						<br />
-						actually master&apos;s degree student 🎓
+						actually master&apos;s degree <span style={{color:"#00897b"}}>student</span> 🎓
 					</Typography>
 
 					<Divider sx={{marginTop:"1rem"}}></Divider>
@@ -38,9 +37,9 @@ export default function Home() {
 						spacing={1}
 						sx={{ marginTop: "1rem" }}>
 						<Button
-							variant='outlined'
+							variant='contained'
 							size='large'
-							color='success'
+							color='primary'
 							endIcon={<DownloadIcon />}
 							href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 							target='_blank'>
@@ -56,7 +55,7 @@ export default function Home() {
 						</IconButton>
 
 						<IconButton
-							color='primary'
+							color='info'
 							aria-label='Linkedin'
 							size='large'
 							href='https://www.linkedin.com/in/francesco-pio-covino-583128217'
@@ -65,7 +64,7 @@ export default function Home() {
 						</IconButton>
 
 						<IconButton
-							color='success'
+							color='warning'
 							aria-label='EMail'
 							size='large'
 							href='mailto:francescop.covino@gmail.com'
@@ -74,13 +73,14 @@ export default function Home() {
 						</IconButton>
 
 						<IconButton
-							color='primary'
+							color='info'
 							aria-label='Telegram'
 							size='large'
 							href='https://t.me/piozzolo'
 							target='_blank'>
 							<TelegramIcon fontSize='inherit' />
 						</IconButton>
+						
 					</Stack>
 					<Stack
 						direction='row'
@@ -90,15 +90,16 @@ export default function Home() {
 						<Button
 							variant='outlined'
 							size='large'
-							color='warning'
+							color='primary'
 							endIcon={<FolderIcon />}
 							href='/projects'>
 							Projects
 						</Button>
 						<Button
 							variant='outlined'
+							disabled='true'
 							size='large'
-							color='error'
+							color='primary'
 							endIcon={<TimelineIcon />}
 							href='/journey'>
 							My Journey
