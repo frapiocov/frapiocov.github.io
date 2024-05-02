@@ -1,3 +1,6 @@
+"use client";
+
+import * as React from "react";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
@@ -12,24 +15,42 @@ import Typography from "@mui/material/Typography";
 import FolderIcon from "@mui/icons-material/Folder";
 import TimelineIcon from "@mui/icons-material/Timeline";
 import Divider from "@mui/material/Divider";
+import Snackbar from "@mui/material/Snackbar";
 
 export default function Home() {
+	const [open, setOpen] = React.useState(false);
+
+	const handleClick = () => {
+		setOpen(true);
+	};
+
+	const handleClose = (event, reason) => {
+		if (reason === "clickaway") {
+			return;
+		}
+
+		setOpen(false);
+	};
+
 	return (
 		<main>
 			<CssBaseline />
 			<Container maxWidth='lg' sx={{ marginTop: "3.8rem" }}>
 				<div className='main'>
-					<Typography variant='h2' sx={{ fontWeight: 540 }}>
-						hi, i&apos;m <span style={{color:"#00897b"}}>pio </span>👋
+					<Typography variant='h2' sx={{ fontWeight: 580 }}>
+						hi,i&apos;m{" "}
+						<span style={{ color: "#00897b" }}>pio </span>👋
 					</Typography>
 
 					<Typography variant='h5'>
-						your friendly neighbourhood <span style={{color:"#00897b"}}>dev</span> 👨‍💻
+						your friendly neighbourhood{" "}
+						<span style={{ color: "#00897b" }}>dev</span> 👨‍💻
 						<br />
-						actually master&apos;s degree <span style={{color:"#00897b"}}>student</span> 🎓
+						actually master&apos;s degree{" "}
+						<span style={{ color: "#00897b" }}>student</span> 🎓
 					</Typography>
 
-					<Divider sx={{marginTop:"1rem"}}></Divider>
+					<Divider sx={{ marginTop: "1rem" }}></Divider>
 
 					<Stack
 						direction='row'
@@ -37,14 +58,19 @@ export default function Home() {
 						spacing={1}
 						sx={{ marginTop: "1rem" }}>
 						<Button
-							variant='contained'
+							variant='outlined'
 							size='large'
 							color='primary'
 							endIcon={<DownloadIcon />}
-							href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-							target='_blank'>
+							onClick={handleClick}>
 							CV
 						</Button>
+						<Snackbar
+							open={open}
+							autoHideDuration={3000}
+							onClose={handleClose}
+							message='Ops 😢. My curriculum is not yet ready.'
+						/>
 
 						<IconButton
 							aria-label='Github'
@@ -80,7 +106,6 @@ export default function Home() {
 							target='_blank'>
 							<TelegramIcon fontSize='inherit' />
 						</IconButton>
-						
 					</Stack>
 					<Stack
 						direction='row'
