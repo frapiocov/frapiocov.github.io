@@ -10,13 +10,13 @@ const roboto = Roboto_Mono({
 
 const theme = createTheme({
 	typography: {
-		fontFamily: roboto.style.fontFamily,
+		fontFamily: roboto.style.fontFamily,	
 	},
 	palette: {
-		mode: "light",
+		mode: "dark",
 		primary: {
 			light: "#00695c",
-			main: "#00897b",
+			main: "#8FD694",
 			dark: "#4db6ac",
 			contrastText: "#fff",
 		},

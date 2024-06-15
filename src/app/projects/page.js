@@ -12,13 +12,12 @@ import CircularProgress from "@mui/material/CircularProgress";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
-import Avatar from "@mui/material/Avatar";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkIcon from "@mui/icons-material/Link";
 import IconButton from "@mui/material/IconButton";
-import FloatingActionButton from "@/components/fab";
 import Button from "@mui/material/Button";
-import TerminalIcon from "@mui/icons-material/Terminal";
+import Stack from "@mui/material/Stack";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 export default function Projects() {
 	const [repos, setRepos] = useState([]);
@@ -56,65 +55,80 @@ export default function Projects() {
 		<div>
 			<CssBaseline />
 			<Container
-				maxWidth='lg'
+				maxWidth='md'
 				sx={{ padding: "0.8rem", marginTop: "1.4rem" }}>
-				<Button variant='text' color="primary" startIcon={<TerminalIcon />} href="/">
-					frapiocov
-				</Button>
-				<Typography variant='h3'>Projects📂</Typography>
-				<List
-					sx={{
-						width: "100%",
-						bgcolor: "background.paper",
-					}}>
-					{repos.map((r) => (
-						<>
-							<ListItem
-								key={r.html_url}
-								secondaryAction={
-									<IconButton
-										href={
-											r.homepage ? r.homepage : r.html_url
+				<Stack direction='row' textAlign='left' spacing={5}>
+					<Button
+						variant='text'
+						color='primary'
+						startIcon={<ArrowBackIcon />}
+						href='/'>
+						home
+					</Button>
+					<Typography variant='h4'>Projects📂</Typography>
+				</Stack>
+
+				<Box
+					display='flex'
+					justifyContent='center'
+					alignItems='center'
+					minHeight='100vh'>
+					<List
+						sx={{
+							width: "100%",
+							bgcolor: "background.paper",
+						}}>
+						{repos.map((r) => (
+							<>
+								<ListItem
+									key={r.html_url}
+									secondaryAction={
+										<IconButton
+											href={
+												r.homepage
+													? r.homepage
+													: r.html_url
+											}
+											target='_blank'
+											color='info'
+											edge='end'
+											aria-label='homepage'>
+											<LinkIcon />
+										</IconButton>
+									}
+									alignItems='flex-start'>
+									<ListItemAvatar>
+										<IconButton
+											href={r.html_url}
+											target='_blank'
+											edge='end'
+											size='large'
+											aria-label='repository'>
+											<GitHubIcon />
+										</IconButton>
+									</ListItemAvatar>
+									<ListItemText
+										primary={
+											<Typography variant='h6'>
+												{r.name}
+											</Typography>
 										}
-										target='_blank'
-										color='info'
-										edge='end'
-										aria-label='homepage'>
-										<LinkIcon />
-									</IconButton>
-								}
-								alignItems='flex-start'>
-								<ListItemAvatar>
-									<IconButton
-										href={r.html_url}
-										target='_blank'
-										edge='end'
-										size='large'
-										aria-label='repository'>
-										<GitHubIcon />
-									</IconButton>
-								</ListItemAvatar>
-								<ListItemText
-									primary={
-										<Typography variant='h6'>
-											{r.name}
-										</Typography>
-									}
-									secondary={
-										<Typography
-											sx={{ display: "inline" }}
-											component='span'
-											variant='body2'
-											color='text.secondary'>
-											{r.description}
-										</Typography>
-									}
-								/>
-							</ListItem>
-							<Divider variant='inset' component='li' />
-						</>
-					))}
-				</List>
+										secondary={
+											<Typography
+												sx={{ display: "inline" }}
+												component='span'
+												variant='body2'
+												color='text.secondary'>
+												{r.description}
+											</Typography>
+										}
+									/>
+								</ListItem>
+								<Divider variant='inset' component='li' />
+							</>
+						))}
+					</List>
+				</Box>
 			</Container>
 		</div>
 	);
