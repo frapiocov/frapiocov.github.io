@@ -13,7 +13,7 @@ const theme = createTheme({
 		fontFamily: roboto.style.fontFamily,	
 	},
 	palette: {
-		mode: "dark",
+		mode: "light",
 		primary: {
 			light: "#00695c",
 			main: "#8FD694",

@@ -63,7 +63,7 @@ export default function Projects() {
 						color='primary'
 						startIcon={<ArrowBackIcon />}
 						href='/'>
-						home
+						
 					</Button>
 					<Typography variant='h4'>Projects📂</Typography>
 				</Stack>
