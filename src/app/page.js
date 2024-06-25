@@ -14,7 +14,7 @@ import TelegramIcon from "@mui/icons-material/Telegram";
 import Typography from "@mui/material/Typography";
 import FolderIcon from "@mui/icons-material/Folder";
 import TimelineIcon from "@mui/icons-material/Timeline";
-import Divider from "@mui/material/Divider";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import Snackbar from "@mui/material/Snackbar";
 import Box from "@mui/material/Box";
 
@@ -61,21 +61,6 @@ export default function Home() {
 							textAlign='center'
 							spacing={1}
 							sx={{ marginTop: "1rem" }}>
-							<Button
-								variant='outlined'
-								size='large'
-								color='primary'
-								endIcon={<DownloadIcon />}
-								onClick={handleClick}>
-								CV
-							</Button>
-							<Snackbar
-								open={open}
-								autoHideDuration={3000}
-								onClose={handleClose}
-								message='Ops 😢. My curriculum is not yet ready.'
-							/>
-
 							<IconButton
 								aria-label='Github'
 								size='large'
@@ -110,6 +95,15 @@ export default function Home() {
 								target='_blank'>
 								<TelegramIcon fontSize='inherit' />
 							</IconButton>
+
+							<IconButton
+								color='secondary'
+								aria-label='Instagram'
+								size='large'
+								href='https://www.instagram.com/piocovino_/'
+								target='_blank'>
+								<InstagramIcon fontSize='inherit' />
+							</IconButton>
 						</Stack>
 						<Stack
 							direction='row'
@@ -117,18 +111,34 @@ export default function Home() {
 							spacing={2}
 							sx={{ marginTop: "1.5rem" }}>
 							<Button
-								variant='outlined'
+								variant='contained'
 								size='large'
 								color='primary'
+								endIcon={<DownloadIcon />}
+								onClick={handleClick}>
+								CV
+							</Button>
+							<Snackbar
+								open={open}
+								autoHideDuration={3000}
+								onClose={handleClose}
+								message='Ops 😢. My curriculum is not yet ready.'
+							/>
+
+							<Button
+								variant='contained'
+								size='large'
+								color='secondary'
 								endIcon={<FolderIcon />}
 								href='/projects'>
 								Projects
 							</Button>
+
 							<Button
-								variant='outlined'
+								variant='contained'
 								disabled='true'
 								size='large'
-								color='primary'
+								color='error'
 								endIcon={<TimelineIcon />}
 								href='/journey'>
 								My Journey

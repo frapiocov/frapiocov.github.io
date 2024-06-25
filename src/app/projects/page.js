@@ -58,13 +58,9 @@ export default function Projects() {
 				maxWidth='md'
 				sx={{ padding: "0.8rem", marginTop: "1.4rem" }}>
 				<Stack direction='row' textAlign='left' spacing={5}>
-					<Button
-						variant='text'
-						color='primary'
-						startIcon={<ArrowBackIcon />}
-						href='/'>
-						
-					</Button>
+					<IconButton color='primary' size='large' href='/'>
+						<ArrowBackIcon fontSize='inherit' />
+					</IconButton>
 					<Typography variant='h4'>Projects📂</Typography>
 				</Stack>
 
