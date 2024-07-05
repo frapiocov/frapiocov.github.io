@@ -36,12 +36,14 @@ export default function Home() {
 	return (
 		<main>
 			<CssBaseline />
-			<Container maxWidth='lg'>
+			<Container maxWidth='lg' sx={{ padding: "0.8rem" }}>
 				<Box
 					display='flex'
 					justifyContent='center'
 					alignItems='center'
-					minHeight='100vh'>
+					minHeight='100vh'
+					
+					>
 					<Stack direction='column' textAlign='left'>
 						<Typography variant='h2' sx={{ fontWeight: 600 }}>
 							hi,i&apos;m{" "}
@@ -53,7 +55,7 @@ export default function Home() {
 							<span style={{ color: "#ee9b00" }}>dev</span> 👨‍💻
 							<br />
 							actually master&apos;s degree{" "}
-							<span style={{ color: "#ee9b00" }}>student</span> 🎓
+							<span style={{ color: "#ee9b00" }}>student</span> 📚
 						</Typography>
 
 						<Stack
