@@ -15,6 +15,7 @@ import Typography from "@mui/material/Typography";
 import FolderIcon from "@mui/icons-material/Folder";
 import TimelineIcon from "@mui/icons-material/Timeline";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import SendIcon from '@mui/icons-material/Send';
 import Snackbar from "@mui/material/Snackbar";
 import Box from "@mui/material/Box";
 
@@ -137,13 +138,22 @@ export default function Home() {
 							</Button>
 
 							<Button
+								href='mailto:francescop.covino@gmail.com'
+								size='large'
+								color="error"
+								variant="contained"
+								endIcon={<SendIcon />}>
+								Contact me
+							</Button>
+
+							<Button
 								variant='contained'
 								disabled='true'
 								size='large'
 								color='error'
 								endIcon={<TimelineIcon />}
 								href='/journey'>
-								My Journey
+								Journey
 							</Button>
 						</Stack>
 					</Stack>
