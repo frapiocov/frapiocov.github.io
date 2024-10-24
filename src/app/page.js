@@ -137,24 +137,7 @@ export default function Home() {
 								Projects
 							</Button>
 
-							<Button
-								href='mailto:francescop.covino@gmail.com'
-								size='large'
-								color="error"
-								variant="contained"
-								endIcon={<SendIcon />}>
-								Contact me
-							</Button>
-
-							<Button
-								variant='contained'
-								disabled='true'
-								size='large'
-								color='error'
-								endIcon={<TimelineIcon />}
-								href='/journey'>
-								Journey
-							</Button>
+						
 						</Stack>
 					</Stack>
 				</Box>
