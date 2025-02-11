@@ -67,9 +67,6 @@ dash:
     - url: https://telegram.me/frapiocov
       icon: telegram-square
       color: cyan
-    - url: https://bitbrain.itch.io
-      icon: itch-io
-      color: red
     - url: https://github.com/frapiocov
       icon: github-square
       color: purple
