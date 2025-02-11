@@ -21,19 +21,16 @@
 title: frapiocov
 email: francescop.covino@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  your friendly neighborhood developer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: frapiocov
 github_username:  frapiocov
 
 # required by disqus to display comments
 url: https://your-site-url
 
 # jekyll-paginate
-paginate: 5
+paginate: 1
 paginate_path: "/blog/page:num/"
 
 # jekyll-tagging (optional)
@@ -50,7 +47,7 @@ dash:
 
   # (optional) discqus comment configuration
   disqus:
-    shortname: <your-disqus-shortname>  
+    shortname: frapiocov 
 
   # the animation speed of the post scroll-in effect
   animation_speed: 50
@@ -59,21 +56,21 @@ dash:
   rtl: false
 
   # Replaces the default avatar provider (gravatar)
-  #avatar_source: github
-  #github_username: bitbrain
-  #avatar_source: local
-  #avatar_path: /assets/avatar.png
+  avatar_source: github
+  github_username: frapiocov
+  avatar_source: local
+  avatar_path: /assets/avatar.png
 
   # generate social links in footer
   # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
   social_links:
-    - url: https://twitter.com/bitbrain_
-      icon: twitter-square
+    - url: https://telegram.me/frapiocov
+      icon: telegram-square
       color: cyan
     - url: https://bitbrain.itch.io
       icon: itch-io
       color: red
-    - url: https://github.com/bitbrain
+    - url: https://github.com/frapiocov
       icon: github-square
       color: purple
   
