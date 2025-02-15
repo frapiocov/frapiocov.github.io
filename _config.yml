@@ -101,3 +101,5 @@ exclude:
   - LICENSE
   - "*.log"
   - [vendor]
+
+exclude: [vendor]
