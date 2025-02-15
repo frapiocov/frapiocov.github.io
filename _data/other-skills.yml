@@ -1,7 +1,39 @@
-- name: Adobe Photoshop
-  percentage: 95
+- name: Wordpress
+  percentage: 70
   color: info
 
-- name: Adobe Illustrator
-  percentage: 90
+- name: Flutter
+  percentage: 70
   color: success
+
+- name: React
+  percentage: 60
+  color: warning
+
+- name: Node.js
+  percentage: 60
+  color: primary
+
+- name: Unity
+  percentage: 60
+  color: danger
+
+- name: Angular
+  percentage: 60
+  color: info
+
+- name: Android
+  percentage: 70
+  color: success
+
+- name: MySQL
+  percentage: 70
+  color: warning
+
+- name: MongoDB
+  percentage: 60
+  color: primary
+
+- name: Next.js
+  percentage: 50
+  color: danger
