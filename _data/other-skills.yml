@@ -6,6 +6,10 @@
   percentage: 70
   color: success
 
+- name: Docker
+  percentage: 70
+  color: danger
+
 - name: React
   percentage: 60
   color: warning
