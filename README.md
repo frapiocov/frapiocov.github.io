@@ -1,6 +1,6 @@
-## My portfolio
+### frapiocov.github.io
 
-A static website built with **Jekyll** and hosted on **GitHub Pages**.
+Portfolio built with **Jekyll** and hosted on **GitHub Pages**.
 Theme by [portfolYOU](https://github.com/yousinix/portfolYOU)
 
 ## 📌 Prerequisites
