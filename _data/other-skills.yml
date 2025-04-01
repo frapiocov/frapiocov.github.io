@@ -26,8 +26,8 @@
   percentage: 60
   color: info
 
-- name: Android
-  percentage: 70
+- name: React Native
+  percentage: 60
   color: success
 
 - name: MySQL
@@ -38,6 +38,14 @@
   percentage: 60
   color: primary
 
-- name: Next.js
-  percentage: 50
+- name: Linux
+  percentage: 60
   color: danger
+
+- name: Git
+  percentage: 70
+  color: info
+
+- name: Azure & Google Cloud
+  percentage: 60
+  color: success

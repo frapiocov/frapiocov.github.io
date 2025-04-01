@@ -33,3 +33,11 @@
 - name: TypeScript
   percentage: 60
   color: success
+
+- name: PHP
+  percentage: 30
+  color: warning
+
+- name: Bash
+  percentage: 50
+  color: primary

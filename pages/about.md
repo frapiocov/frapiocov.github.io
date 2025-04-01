@@ -8,7 +8,9 @@ weight: 3
 # **About Me**
 
 Hi I am **{{ site.author.name }}** :wave:,<br>
-i'm a potato 🥔
+I got to know programming with puzzles to solve, the passion grew over the years and led me to the course of study I did.
+I am a fresh master's graduate, cloud computing curriculum.☁️
+Some things I have used and know:
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
