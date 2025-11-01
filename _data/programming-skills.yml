@@ -2,6 +2,18 @@
   percentage: 90
   color: danger
 
+- name: SQL
+  percentage: 70
+  color: info
+
+- name: Flutter
+  percentage: 80
+  color: primary
+
+- name: Liquibase
+  percentage: 50
+  color: warning    
+
 - name: Python
   percentage: 60
   color: secondary

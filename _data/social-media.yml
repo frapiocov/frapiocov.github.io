@@ -100,3 +100,8 @@ telegram:
   url   : https://t.me/
   icon  : fab fa-telegram
   color : 0088cc
+
+doi: 
+  url   : https://dl.acm.org/profile/
+  icon  : fab fa-university
+  color : ff5722
