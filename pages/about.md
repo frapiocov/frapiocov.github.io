@@ -8,9 +8,9 @@ weight: 3
 # **About Me**
 
 Hi I am **{{ site.author.name }}** :wave:,<br>
-I got to know programming with puzzles to solve, the passion grew over the years and led me to the course of study I did.
-I am a fresh master's graduate, cloud computing curriculum.☁️
-Some things I have used and know:
+I am a fresh master's degree graduate in cloud computing ☁️
+Actually i'm working as Software Developer
+Some things I have used:
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
